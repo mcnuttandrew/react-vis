@@ -4,6 +4,7 @@ import {showCase} from './index';
 const {
   ComplexChart,
   LineChart,
+  LineChartGL,
   LineMarkChart,
   BarChart,
   StackedVerticalBarChart,
@@ -11,7 +12,8 @@ const {
   StackedHistogram,
   AreaChart,
   AreaChartElevated,
-  ScatteplotChart,
+  ScatterplotChart,
+  ScatterplotGLChart,
   HeatmapChart,
   WidthHeightMarginChart,
   CustomScales,
@@ -78,12 +80,20 @@ class App extends Component {
             <LineChart />
           </section>
           <section>
+            <h3>Line Series GL</h3>
+            <LineChartGL />
+          </section>
+          <section>
             <h3>LineMark Series</h3>
             <LineMarkChart />
           </section>
           <section>
             <h3>Mark Series</h3>
-            <ScatteplotChart />
+            <ScatterplotChart />
+          </section>
+          <section>
+            <h3>Mark Series GL</h3>
+            <ScatterplotGLChart />
           </section>
           <section>
             <h3>Area Series</h3>
