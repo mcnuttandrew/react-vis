@@ -1,4 +1,5 @@
 #!/bin/bash
+npm run build &&
 cd website &&
 npm run build &&
 rm -rf /tmp/dist-vis &&
